@@ -1,5 +1,5 @@
 import React from 'react';
-import {LargeTitle, makeStyles, shorthands, Subtitle1, Text, tokens} from "@fluentui/react-components";
+import {LargeTitle, makeStyles, shorthands, Subtitle1, tokens} from "@fluentui/react-components";
 
 const useStyles = makeStyles({
     root: {
