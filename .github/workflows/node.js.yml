@@ -9,6 +9,11 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
 
@@ -30,3 +35,12 @@ jobs:
       run: npm install
     - name: Build
       run: npm run build
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - id: build-publish
+      uses: bitovi/github-actions-react-to-github-pages@v1.2.0
+      with:
+        path: build
+
