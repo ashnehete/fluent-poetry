@@ -42,7 +42,7 @@ jobs:
     - name: 'upload'
       uses: actions/upload-pages-artifact@v1.0.4
       with:
-        path: ${{ inputs.path }}
+        path: build
 
     - id: deploy
       name: Deploy to GitHub Pages
