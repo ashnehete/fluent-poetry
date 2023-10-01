@@ -5,7 +5,7 @@ import Body from "../Body/Body";
 
 const useStyles = makeStyles({
     root: {
-        width: '720px',
+        width: '1024px',
         minHeight: '100vh',
         ...shorthands.margin(0, 'auto'),
     }
