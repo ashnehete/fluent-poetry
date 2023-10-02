@@ -15,7 +15,7 @@ function Header() {
     return <header className={classes.root}>
         <LargeTitle>Steps of a Ladder</LargeTitle>
         <Subtitle1>by Aashish Nehete</Subtitle1>
-    </header>
+    </header>;
 }
 
 export default Header;

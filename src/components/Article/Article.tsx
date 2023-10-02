@@ -1,6 +1,6 @@
-import React from "react";
+import React, {memo} from "react";
 import {Poem} from "../../types";
-import {makeStyles, shorthands, Text, Title1, tokens} from "@fluentui/react-components";
+import {makeStyles, Text, Title1, tokens} from "@fluentui/react-components";
 
 type ArticleProps = {
     poem: Poem
@@ -10,7 +10,6 @@ const useStyles = makeStyles({
     root: {
         display: 'flex',
         flexDirection: 'column',
-        ...shorthands.padding(tokens.spacingVerticalXXL, 0)
 
     },
     stanza: {
@@ -32,4 +31,4 @@ function Article({poem}: ArticleProps) {
     </div>;
 }
 
-export default Article;
+export default memo(Article);
