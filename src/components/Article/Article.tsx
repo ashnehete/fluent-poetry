@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     stanza: {
         display: 'flex',
         flexDirection: 'column',
-        paddingBottom: tokens.spacingVerticalM,
+        paddingTop: tokens.spacingVerticalM,
     },
 });
 

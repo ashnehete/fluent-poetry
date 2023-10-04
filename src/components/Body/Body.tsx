@@ -2,14 +2,22 @@ import React, {useState} from "react";
 import {makeStyles, SelectTabEventHandler, shorthands, Tab, TabList, tokens} from "@fluentui/react-components";
 import Article from "../Article/Article";
 import {getAllPoems} from "../../utils";
+import breakpoints from "../../breakpoints";
 
 const useStyles = makeStyles({
     root: {
         display: 'flex',
         ...shorthands.padding(tokens.spacingVerticalXXL, 0),
+        ...shorthands.gap(tokens.spacingHorizontalXXL),
+        ...breakpoints.m({
+            flexDirection: 'column',
+        })
     },
     tabList: {
         width: '30%',
+        ...breakpoints.m({
+            width: '100%',
+        })
     }
 });
 
@@ -25,7 +33,8 @@ function Body() {
 
     return <div className={classes.root}>
         <div className={classes.tabList}>
-            <TabList vertical={true}
+            <TabList appearance={"subtle"}
+                     vertical={true}
                      size={"large"}
                      defaultSelectedValue={selected}
                      onTabSelect={onTabSelect}>
