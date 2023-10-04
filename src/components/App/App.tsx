@@ -19,9 +19,9 @@ function App() {
     const classes = useStyles();
     return <div className={classes.root}>
         <Header/>
-        <Divider appearance={'default'}/>
+        <Divider/>
         <Body/>
-        <Divider appearance={'subtle'}/>
+        <Divider/>
         <Footer/>
     </div>;
 }
